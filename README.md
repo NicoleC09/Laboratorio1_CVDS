@@ -61,3 +61,5 @@ Finalmente habre desarrollado completamente la primera parte del laboratorio adq
 ## II. Parte En Parejas
 - Owner: Nicole
 - Collaborator: Andrés
+
+### Conflicto inicial
