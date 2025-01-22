@@ -2,6 +2,10 @@
 
 ![Logotipo creado con IA en base al curso](https://github.com/user-attachments/assets/033c5ab3-8b04-4f81-8f8d-5157a81a3d6e)
 
+## Colaboradores
+- Nicole Dayan Calderón Arévalo
+- Andrés Felipe Chavarro Plazas
+
 ## Descripción del Laboratorio
 Laboratorio 1 de la materia de Ciclos de Vida del Desarrollo del Software, en el cual aprendemos y profundizamos en el uso y buen manejo del sistema de control de versiones Git Hub.
 En este laboratorio ponemos en practica comandos de git hub para conexión y acciones desde el repositorio local al remoto, tambien entendemos la funcionalidad de estos. A la par de este aprendizaje de la herramienta, empezamos a adquirir conocimientos y habilidades necesarios para el trabajo en equipo en la vida laboral.
@@ -55,8 +59,3 @@ El comando **git commit -m "mensaje"** se utiliza para guardar los cambios en el
 Finalmente habre desarrollado completamente la primera parte del laboratorio adquiriendo nuevos aprendizajes sobre manejo de repositorios en GitHub.
 
 ## II. Parte En Parejas
-
-
-## Colaboradores
-- Nicole Dayan Calderón Arévalo
-- Andrés Felipe Chavarro Plazas
