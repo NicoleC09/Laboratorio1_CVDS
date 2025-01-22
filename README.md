@@ -20,7 +20,7 @@ Los solicitado a realizar en esta parte es:
 
 ## :rocket:Desarrollo
 ### :desktop_computer:Creación y configuración de repositorios
-Para crear el repositorio local el primer paso fue crear una `nueva carpeta :file_folder:` con el nombre que asigne a mi repositorio local
+Para crear el repositorio local el primer paso fue crear una `nueva carpeta 📁` con el nombre que asigne a mi repositorio local
 ![imagen de referencia del repo local](https://github.com/user-attachments/assets/f10b7888-8f87-40f7-8203-ea76f60252e0)
 
 Para efectos practicos el paso siguiente que realice fue crear el repositorio en Git
