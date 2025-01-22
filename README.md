@@ -63,3 +63,7 @@ Finalmente habre desarrollado completamente la primera parte del laboratorio adq
 - Collaborator: Andrés
 
 ### Conflicto inicial
+
+
+
+### Conflicto con IDE's
