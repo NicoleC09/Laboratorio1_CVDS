@@ -54,6 +54,9 @@ El comando **git commit -m "mensaje"** se utiliza para guardar los cambios en el
 
 Finalmente habre desarrollado completamente la primera parte del laboratorio adquiriendo nuevos aprendizajes sobre manejo de repositorios en GitHub.
 
+## II. Parte En Parejas
+
+
 ## Colaboradores
 - Nicole Dayan Calderón Arévalo
 - Andrés Felipe Chavarro Plazas
