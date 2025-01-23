@@ -66,7 +66,7 @@ Despues de hacer todo el proceso de agregar un nuevo colaborador al repositorio 
 
 ### :collision: Conflicto inicial
 Como se nos sugirio en el documento del laboratorio, los dos intentamos hacer `push` de nuestros cambios al mismo tiempo. Al aplicar el comando los cambios de Andrés fueron aceptados pero, en el caso de Nicole se genero el conflicto.
-![imagen del conflicto generado](image.png)
+![imagen del conflicto generado](Assets/image.png)
 
 A partir de aquí se busco resolver el conflicto de dos formas diferentes:
 
@@ -76,24 +76,35 @@ A partir de aquí se busco resolver el conflicto de dos formas diferentes:
     `git push`
     `git merge`
 Sin embargo, esto no dio resultado debido a que git fetch sinconizaba los datos pero no los mezclaba y git pull generaba más conflictos por los cambios realizados al mismo archivo.
-![imagen de los intentos](image-1.png)
+![imagen de los intentos](Assets/image-1.png)
 
 - En la segunda parte si se logro resolver el conflicto, aqui se creo una rama a partir de main para el cambio y luego se mezclo nuevamente.
-![imagen creación de rama](image-2.png)
+![imagen creación de rama](Assets/image-2.png)
 
-![add y commit](image-3.png)
+![add y commit](Assets/image-3.png)
 
-![pull request](image-4.png)
+![pull request](Assets/image-4.png)
 
-![merge request con solución](image-5.png)
+![merge request con solución](Assets/image-5.png)
 
 Así damos solución al conflicto y entendemos más acerca de las ramas par realizar cambios en GitHub
 
 ### Conflicto con IDE's
 Al realizar el mismo procedimiento para generar un conflicto, volvemos a la misma situación presentada en la anterior parte. Sin embargo, ahora se nos pide solucionar haciendo uso de algún editor o IDE que nos brinde una herramienta para resolver el problema. En este caso, usamos IntellIJ con su funcionalidad de Git integrada.
 
+![Generacion del conflicto](Assets/image-6.jpg)
+
 Cuando el conflicto se genera, nos dirigimos al IDE en la parte de Git. En esta, nos detecta que previamente ya está el commit realizado, por lo que únicamente tenemos que subirlo al repositorio remoto. No obstante, al intentarlo nos abre una pestaña de confirmación donde al mismo tiempo se rechaza el push por el conflicto generado, dándonos opciones para solucionarlo según lo que nos sea conveniente, dichas opciones son hacer rebase para sobreponer los cambios del commit en contra del repositorio, o la otra opción que de hecho elegimos, hacer un merge entre las dos versiones del documento con el fin de generar otra versión con los elementos que queremos que se mantengan.
+
+![merge request con solución](Assets/image-7.jpg)
+
+![merge request con solución](Assets/image-8.jpg)
 
 Acto seguido, aparece la pantalla que  nos da la opción del merge manual y se abre otra ventana especial. En esta, hay tres columnas con distintas versiones del archivo, en la derecha la versión que se encuentra en el repositorio, a la izquierda la versión que genero el conflicto y en el centro la versión que quedaría al seleccionar las líneas de código que queremos mantener. 
 
+![merge request con solución](Assets/image-9.jpg)
+![merge request con solución](Assets/image-10.jpg)
+
 De este modo, pudimos solucionar el conflicto de modo que fue posible hacer el push al repositorio.
+
+![merge request con solución](Assets/image-11.jpg)
