@@ -62,8 +62,31 @@ Finalmente habre desarrollado completamente la primera parte del laboratorio adq
 - Owner: Nicole
 - Collaborator: Andrés
 
-### Conflicto inicial
+Despues de hacer todo el proceso de agregar un nuevo colaborador al repositorio correctamente, continuamos con la creación y solución de los conflictos.
 
+### :collision: Conflicto inicial
+Como se nos sugirio en el documento del laboratorio, los dos intentamos hacer `push` de nuestros cambios al mismo tiempo. Al aplicar el comando los cambios de Andrés fueron aceptados pero, en el caso de Nicole se genero el conflicto.
+![imagen del conflicto generado](image.png)
 
+A partir de aquí se busco resolver el conflicto de dos formas diferentes:
+
+- En la primera parte se intento:
+    `git pull`
+    `git fetch`
+    `git push`
+    `git merge`
+Sin embargo, esto no dio resultado debido a que git fetch sinconizaba los datos pero no los mezclaba y git pull generaba más conflictos por los cambios realizados al mismo archivo.
+![imagen de los intentos](image-1.png)
+
+- En la segunda parte si se logro resolver el conflicto, aqui se creo una rama a partir de main para el cambio y luego se mezclo nuevamente.
+![imagen creación de rama](image-2.png)
+
+![add y commit](image-3.png)
+
+![pull request](image-4.png)
+
+![merge request con solución](image-5.png)
+
+Así damos solución al conflicto y entendemos más acerca de las ramas par realizar cambios en GitHub
 
 ### Conflicto con IDE's
