@@ -1,4 +1,5 @@
 <h1 align="center"> Laboratorio 1 - Ciclos de Vida del Desarrollo del Software </h1>
+<br />
 
 ![Logotipo creado con IA en base al curso](https://github.com/user-attachments/assets/033c5ab3-8b04-4f81-8f8d-5157a81a3d6e)
 
@@ -6,9 +7,13 @@
 - Nicole Dayan Calderón Arévalo
 - Andrés Felipe Chavarro Plazas
 
+</br>
+
 ## Descripción del Laboratorio
 Laboratorio 1 de la materia de Ciclos de Vida del Desarrollo del Software, en el cual aprendemos y profundizamos en el uso y buen manejo del sistema de control de versiones Git Hub.
 En este laboratorio ponemos en practica comandos de git hub para conexión y acciones desde el repositorio local al remoto, tambien entendemos la funcionalidad de estos. A la par de este aprendizaje de la herramienta, empezamos a adquirir conocimientos y habilidades necesarios para el trabajo en equipo en la vida laboral.
+
+</br>
 
 ## :hammer:I. Parte Individual
 En esta primera parte del laboratorio, desarrollado individualmente, se busca aprender la creación de repositorios(local y remoto), conectarlos y realizar diferentes acciones con los comandos desde ellos.
@@ -21,6 +26,8 @@ Los solicitado a realizar en esta parte es:
 6. Configurar el repositorio local con el repositorio remoto
 7. Subir los cambios, teniendo en cuenta el punto 3
 8. Configurar el correo en git local
+
+</br>
 
 ## :rocket:Desarrollo
 ### :desktop_computer:Creación y configuración de repositorios
@@ -58,11 +65,15 @@ El comando **git commit -m "mensaje"** se utiliza para guardar los cambios en el
 
 Finalmente habre desarrollado completamente la primera parte del laboratorio adquiriendo nuevos aprendizajes sobre manejo de repositorios en GitHub.
 
-## II. Parte En Parejas
+</br>
+
+## II. Generación y resolución de conflictos
+### 📨 Preparativos
+Inicialmente, tenemos que definir los roles en el equipo, en este caso:
 - Owner: Nicole
 - Collaborator: Andrés
 
-Despues de hacer todo el proceso de agregar un nuevo colaborador al repositorio correctamente, continuamos con la creación y solución de los conflictos.
+Ahora, es necesario que el owner le mande la invitacion al colaborador siguiendo la guia proporcionada. Despues de hacer todo el proceso de agregar un nuevo colaborador al repositorio correctamente, continuamos con la creación y solución de los conflictos.
 
 ### :collision: Conflicto inicial
 Como se nos sugirio en el documento del laboratorio, los dos intentamos hacer `push` de nuestros cambios al mismo tiempo. Al aplicar el comando los cambios de Andrés fueron aceptados pero, en el caso de Nicole se genero el conflicto.
@@ -89,6 +100,8 @@ Sin embargo, esto no dio resultado debido a que git fetch sinconizaba los datos 
 
 Así damos solución al conflicto y entendemos más acerca de las ramas par realizar cambios en GitHub
 
+</br>
+
 ### Conflicto con IDE's
 Al realizar el mismo procedimiento para generar un conflicto, volvemos a la misma situación presentada en la anterior parte. Sin embargo, ahora se nos pide solucionar haciendo uso de algún editor o IDE que nos brinde una herramienta para resolver el problema. En este caso, usamos IntellIJ con su funcionalidad de Git integrada.
 
@@ -105,6 +118,30 @@ Acto seguido, aparece la pantalla que  nos da la opción del merge manual y se a
 ![merge request con solución](Assets/image-9.jpg)
 ![merge request con solución](Assets/image-10.jpg)
 
-De este modo, pudimos solucionar el conflicto de modo que fue posible hacer el push al repositorio.
+De este modo, pudimos solucionar el conflicto de haciendo posible el push al repositorio.
 
 ![merge request con solución](Assets/image-11.jpg)
+
+</br>
+
+## III. Manejo de ramas
+
+### Optimización del Trabajo para Minimizar Conflictos
+Usar ramas en Git es esencial para minimizar conflictos porque permite aislar cambios relacionados con una funcionalidad o tarea específica. Esto evita que varios desarrolladores trabajen directamente en la misma rama principal, reduciendo la posibilidad de sobrescribir cambios. Además, las ramas facilitan pruebas y revisiones antes de fusionar al proyecto principal, asegurando que cada cambio esté completamente integrado y funcional sin afectar el trabajo de otros.
+
+### ¿Qué es y como funciona el Pull Request?
+Un **Pull Request** (tambien conocido como PR) es fundamental en el desarrollo colaborativo porque actúa como un punto de control antes de fusionar cambios de una rama a otra, permitiendo que otros miembros del equipo revisen el código, detecten errores, sugieran mejoras y aseguren que los cambios cumplen con los estándares del proyecto. El proceso para realizar una es el siguiente:
+1. Un desarrollador crea una rama para trabajar en una funcionalidad o corrección específica.
+2. Realiza los cambios en esa rama y los confirma (commits).
+3. Cuando los cambios están listos, abre un Pull Request desde la rama con los cambios hacia la rama de destino.
+4. Otros colaboradores revisan el código, comentan o sugieren mejoras.
+5. Si todo está correcto, el PR se aprueba y los cambios se fusionan (merge) en la rama objetivo.
+
+De este modo, podemos asegurar que los cambios realizados no generarian un conflicto y permite que el trabao del equipo de desarrollo se integre de forma correcta.
+
+### Creacion de ramas
+
+
+### PR de cada desarrollador
+
+### Revision de PR's
