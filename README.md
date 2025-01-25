@@ -105,22 +105,33 @@ Así damos solución al conflicto y entendemos más acerca de las ramas par real
 ### Conflicto con IDE's
 Al realizar el mismo procedimiento para generar un conflicto, volvemos a la misma situación presentada en la anterior parte. Sin embargo, ahora se nos pide solucionar haciendo uso de algún editor o IDE que nos brinde una herramienta para resolver el problema. En este caso, usamos IntellIJ con su funcionalidad de Git integrada.
 
-![Generacion del conflicto](Assets/image-6.jpg)
+<p align="center">
+  <img src="Assets/image-6.jpg" alt="Generacion del conflicto">
+</p>
 
 Cuando el conflicto se genera, nos dirigimos al IDE en la parte de Git. En esta, nos detecta que previamente ya está el commit realizado, por lo que únicamente tenemos que subirlo al repositorio remoto. No obstante, al intentarlo nos abre una pestaña de confirmación donde al mismo tiempo se rechaza el push por el conflicto generado, dándonos opciones para solucionarlo según lo que nos sea conveniente, dichas opciones son hacer rebase para sobreponer los cambios del commit en contra del repositorio, o la otra opción que de hecho elegimos, hacer un merge entre las dos versiones del documento con el fin de generar otra versión con los elementos que queremos que se mantengan.
 
-![merge request con solución](Assets/image-7.jpg)
-
-![merge request con solución](Assets/image-8.jpg)
+<p align="center">
+  <img src="Assets/image-7.jpg" alt="merge request con solución">
+</p>
+<p align="center">
+  <img src="Assets/image-8.jpg" alt="merge request con solución">
+</p>
 
 Acto seguido, aparece la pantalla que  nos da la opción del merge manual y se abre otra ventana especial. En esta, hay tres columnas con distintas versiones del archivo, en la derecha la versión que se encuentra en el repositorio, a la izquierda la versión que genero el conflicto y en el centro la versión que quedaría al seleccionar las líneas de código que queremos mantener. 
 
-![merge request con solución](Assets/image-9.jpg)
-![merge request con solución](Assets/image-10.jpg)
+<p align="center">
+  <img src="Assets/image-9.jpg" alt="merge request con solución">
+</p>
+<p align="center">
+  <img src="Assets/image-10.jpg" alt="merge request con solución">
+</p>
 
 De este modo, pudimos solucionar el conflicto de haciendo posible el push al repositorio.
 
-![merge request con solución](Assets/image-11.jpg)
+<p align="center">
+  <img src="Assets/image-11.jpg" alt="merge request con solución">
+</p>
 
 </br>
 
@@ -128,6 +139,8 @@ De este modo, pudimos solucionar el conflicto de haciendo posible el push al rep
 
 ### Optimización del Trabajo para Minimizar Conflictos
 Usar ramas en Git es esencial para minimizar conflictos porque permite aislar cambios relacionados con una funcionalidad o tarea específica. Esto evita que varios desarrolladores trabajen directamente en la misma rama principal, reduciendo la posibilidad de sobrescribir cambios. Además, las ramas facilitan pruebas y revisiones antes de fusionar al proyecto principal, asegurando que cada cambio esté completamente integrado y funcional sin afectar el trabajo de otros.
+
+</br>
 
 ### ¿Qué es y como funciona el Pull Request?
 Un **Pull Request** (tambien conocido como PR) es fundamental en el desarrollo colaborativo porque actúa como un punto de control antes de fusionar cambios de una rama a otra, permitiendo que otros miembros del equipo revisen el código, detecten errores, sugieran mejoras y aseguren que los cambios cumplen con los estándares del proyecto. El proceso para realizar una es el siguiente:
@@ -137,11 +150,41 @@ Un **Pull Request** (tambien conocido como PR) es fundamental en el desarrollo c
 4. Otros colaboradores revisan el código, comentan o sugieren mejoras.
 5. Si todo está correcto, el PR se aprueba y los cambios se fusionan (merge) en la rama objetivo.
 
-De este modo, podemos asegurar que los cambios realizados no generarian un conflicto y permite que el trabao del equipo de desarrollo se integre de forma correcta.
+De este modo, podemos asegurar que los cambios realizados no generarían un conflicto y permite que el trabajo del equipo de desarrollo se integre de forma correcta.
+
+</br>
 
 ### Creacion de ramas
+GitHub nos da la opción de crear ramas desde el mismo repositorio remoto, en este creamos una rama para cada integrante donde cada quien trabajará en los cambios asignados. En este caso, cada uno subirá el desarrollo de la resolución de uno de los dos conflictos. 
 
+<p align="center">
+  <img src="Assets/image-12.png" alt="Ramas creadas">
+</p>
+
+Para llevar a cabo cada procedimiento, en nuestro local actualizamos las ramas existentes con `git fetch` y luego nos pasamos a nuestra respectiva rama con `git checkout` seguido de un `git pull` para asegurar que el contenido de la rama sea correcto y no genere conflictos. Una vez realizados los cambios, se realiza el commit y se sube a su respectiva rama.
+
+</br>
 
 ### PR de cada desarrollador
+En el momento en que las ramas están listas para ser integradas al documento en la main, seguimos los pasos de la guía proporcionada para realizar una PR. Así, nos dirigimos a la sección correspondiente y creamos la PR respectiva para cada rama.
+
+<p align="center">
+  <img src="Assets/image-13.jpg" alt="Ramas creadas">
+</p>
+
+Como podemos apreciar, en la PR mostrada nos da un aviso de que no hay conflictos y es posible realizar un merge a la rama principal teniendo en cuenta que es la segunda que se integró al documento. Por lo cual podemos confirmar que, siempre y cuando no se sobreescribe ni una sola línea de código, es posible trabajar sobre un mismo archivo mediante la ramificación. Para comprobarlo, visualmente se ve de la siguiente manera.
+
+<p align="center">
+  <img src="Assets/image-15.png" alt="Ramas creadas">
+</p>
+
+Por otro lado, eliminamos las ramas que ya fueron implementadas a la principal. Pues, por medio de la misma sección donde se crean, pudimos realizar esta opción al presionar las acciones que se pueden realizar con las ramas. De igual manera, cuando el merge se aprueba, nos da la opción de eliminar la rama en ese mismo instante para que el proceso sea más sencillo. En nuestro caso, realizamos una por cada método.
+
+</br>
 
 ### Revision de PR's
+Como se nos indicó, modificamos las configuraciones del repositorio de modo que no fuese posible realizar un merge sin que algún usuario revisara y diera el visto bueno. En este caso, se creó una rama dedicada a reorganizar las imágenes y las URL's de los directorios presentes en el documento. De modo que, tras realizar el procedimiento por parte de Andrés, se creó la PR y Nicol fue la encargada de revisar y aprobar la integración. Después, se realizó el merge seguido de la eliminación correspondiente a la rama de desarrollo.
+
+<p align="center">
+  <img src="Assets/image-14.png" alt="Ramas creadas">
+</p>
